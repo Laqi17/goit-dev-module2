@@ -1,6 +1,8 @@
 package market;
 
 import org.junit.jupiter.api.Test;
+
+//delete unused imports
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -13,6 +15,7 @@ import static org.mockito.Mockito.when;
 
 class MarketTest {
 
+    // the list looks unused, do we need it?
     List<Product> mockList = Arrays.asList(
             new Product("a", 1.25, 3, 3.0),
             new Product("b", 4.25),
@@ -37,5 +40,7 @@ class MarketTest {
     void getProductTestThrow() {
         assertThrows(IllegalArgumentException.class, () -> market.getProduct("s"));
     }
+
+    //any test for getProductList method?
 
 }

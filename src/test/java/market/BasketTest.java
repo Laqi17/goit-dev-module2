@@ -1,6 +1,8 @@
 package market;
 
 import org.junit.jupiter.api.Test;
+
+//please delete unused imports
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -14,6 +16,6 @@ class BasketTest {
 
     @Test
     void calculateTotalCost() {
-    assertEquals(3.0, basket.calculateTotalCost(" Aaa"));
+        assertEquals(3.0, basket.calculateTotalCost(" Aaa"));
     }
 }

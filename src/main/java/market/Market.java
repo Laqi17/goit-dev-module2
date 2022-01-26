@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Market {
+    //any accessor type? Should I be able to edit the data in scope the package?
     Product prodA =  new Product("a", 1.25, 3, 3.0);
     Product prodB =  new Product("b", 4.25);
     Product prodC =  new Product("c", 1.00, 6, 5.0);

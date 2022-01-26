@@ -21,6 +21,7 @@ public class Product {
     public Product(String name, double price) {
         this.name = name;
         this.price = price;
+        //actually it's not needed, int is 0 by default
         this.amount = 0;
     }
 
@@ -70,6 +71,7 @@ public class Product {
         if (this.minAmount != 0) {
             return amount / minAmount * discount + amount % minAmount * price;
         }
+        //please ALWAYS use curly braces
         else return amount * price;
 
     }
