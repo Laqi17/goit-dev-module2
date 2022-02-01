@@ -15,13 +15,11 @@ public class Product {
         this.price = price;
         this.minAmount = minAmount;
         this.discount = discount;
-        this.amount = 0;
     }
 
     public Product(String name, double price) {
         this.name = name;
         this.price = price;
-        this.amount = 0;
     }
 
     public String getName() {
