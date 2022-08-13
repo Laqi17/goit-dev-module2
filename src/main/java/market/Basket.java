@@ -1,12 +1,14 @@
 package market;
 
 public class Basket {
-    Market market = Market.getInstance();
+    public Market market;
+    public Basket(Market market) {
+        this.market = market;
+    }
 
     public double calculateTotalCost(String basket) {
         double result = 0.0;
         char[] basketArray = basket.trim().toLowerCase().toCharArray();
-
 
         for (char c : basketArray) {
             market.getProduct(c + "").increaseAmount();
@@ -17,5 +19,6 @@ public class Basket {
         }
 
         return result;
+
     }
 }
